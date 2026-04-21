@@ -16,14 +16,15 @@ const nextConfig = {
     ],
   },
   async rewrites() {
-  return {
-    beforeFiles: [
-      {
-        source: '/validation-key.txt',
-        destination: '/api/validation-key',
-      }
-    ],
-  };
-},
+    return {
+      beforeFiles: [
+        {
+          source: '/validation-key.txt',
+          destination: '/api/validation-key',
+        }
+      ],
+    };
+  },
+};
 
-export default nextConfig
+export default nextConfig;
